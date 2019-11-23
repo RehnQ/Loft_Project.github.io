@@ -268,16 +268,16 @@ button {
 
 .pref__title {
   font-family: lifehack;
-  font-size: 21.4px;
+  font-size: 21px;
   color: #2f3234;
   text-align: center;
   width: 80%;
-  letter-spacing: 1.2px; }
+  letter-spacing: 1.5px; }
 
 .pref__text {
   font-family: Ubuntu;
   font-weight: lighter;
-  font-size: 14.03px;
+  font-size: 14px;
   color: #575959;
   text-align: center;
   line-height: 24px;
