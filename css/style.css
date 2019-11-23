@@ -1,0 +1,393 @@
+
+body {
+  margin: 0; }
+
+
+@font-face {
+  font-family: Gagalin;
+  src: url("../fonts/Gagalin.otf"), url("../fonts/gagalin-webfont.eot"), url("../fonts/gagalin-webfont.ttf") format("truetype"), url("../fonts/gagalin-webfont.woff") format("woff"), url("../fonts/gagalin-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Lifehack;
+  src: url("../fonts/Lifehack.otf"), url("../fonts/Lifehack-webfont.eot"), url("../fonts/Lifehack-webfont.ttf") format("truetype"), url("../fonts/Lifehack-webfont.woff") format("woff"), url("../fonts/Lifehack-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("../fonts/Ubuntu-B.ttf"), url("../fonts/Ubuntu-B-webfont.eot"), url("../fonts/Ubuntu-B-webfont.ttf") format("truetype"), url("../fonts/Ubuntu-B-webfont.woff") format("woff"), url("../fonts/Ubuntu-B-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("../fonts/Ubuntu-Light.ttf") format("truetype"), url("../fonts/Ubuntu-Light-webfont.eot"), url("../fonts/Ubuntu-Light-webfont.woff") format("woff"), url("../fonts/Ubuntu-Light-webfont.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("../fonts/Ubuntu-Medium.ttf") format("truetype"), url("../fonts/Ubuntu-Medium-webfont.eot"), url("../fonts/Ubuntu-Medium-webfont.woff") format("woff"), url("../fonts/Ubuntu-Medium-webfont.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("../fonts/Ubuntu-Regular.ttf") format("truetype"), url("../fonts/Lifehack-webfont.eot"), url("../fonts/Lifehack-webfont.woff") format("woff"), url("../fonts/Lifehack-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+*,
+button {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Ubuntu; }
+
+.pager {
+  position: fixed;
+  right: 33px;
+  top: 75px; }
+
+.pager__items {
+  list-style: none;
+  position: relative; }
+
+.pager__item {
+  position: relative; }
+
+.pager__url {
+  color: white; }
+
+.pager__item {
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-bottom: 15px; }
+
+.pager__active:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: transparent; }
+
+.wrapper {
+  width: 100%;
+  height: 100%; }
+
+.section {
+  width: 100%;
+  height: 100vh; }
+
+.main-menu__url {
+  color: white; }
+
+.header {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px; }
+
+.main-page {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  background-image: url(../images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0 0 0;
+  color: white; }
+
+.container {
+  width: 1100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.logo {
+  margin: 8px 0 0 80px; }
+
+.menu {
+  margin: 2px 0 0 0;
+  display: flex;
+  align-items: center; }
+
+.main-menu__items {
+  display: flex;
+  height: 35px;
+  margin-right: -6px;
+  letter-spacing: -0.38px; }
+
+.main-menu__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 18px; 
+}
+
+.main-menu__item::after {
+  content: "";
+  position: relative;
+  margin-left: 16px;
+  width: 2px;
+  height: 2px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  }
+
+  .main-menu__item:hover {
+    text-decoration: underline; }
+
+.order-button {
+  padding: 13px 16px;
+  height: 35px;
+  background-color: #e45028;
+  border-radius: 4px;
+  margin-right: 60px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid transparent;
+  cursor: pointer; }
+  .order-button:hover {
+    background-color: #c1401e; }
+
+.table-wrapper {
+  display: flex;
+  width: auto;
+  height: 85%;
+  justify-content: center;
+  align-items: center; }
+
+.main-page__table {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 880px;
+  height: 342px;
+  margin-top: -90px;
+  margin-left: 0px; }
+
+.main-page__burger {
+  position: relative;
+  background-image: url(../images/drops.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 238px; }
+
+.main-page__burger_img {
+  position: relative;
+  left: 35px;
+  top: -70px; }
+
+.main-page__titles {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 60px; }
+
+.main-page__main_title {
+  font-family: gagalin;
+  font-size: 72px;
+  color: #f9b43b; }
+
+.main-page__second_title {
+  font-family: Lifehack;
+  font-size: 65px;
+  color: white;
+  margin-top: 24px;
+  line-height: 62px;
+  letter-spacing: -1.78px; }
+
+.main-page__down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -41px; }
+
+.best {
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  background-image: url(../images/bg-best.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0 0 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.c__best {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.best-title {
+  font-family: gagalin;
+  font-size: 72px;
+  color: #2f3234;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  margin-left: 18px; }
+
+.prefs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 90px; }
+
+.pref {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  align-items: center;
+  margin-right: -15px; }
+
+.pref__img {
+  height: 90px;
+  margin-bottom: 30px; }
+
+.pref__title {
+  font-family: lifehack;
+  font-size: 21.4px;
+  color: #2f3234;
+  text-align: center;
+  width: 80%;
+  letter-spacing: 1.2px; }
+
+.pref__text {
+  font-family: Ubuntu;
+  font-weight: lighter;
+  font-size: 14.03px;
+  color: #575959;
+  text-align: center;
+  line-height: 24px;
+  white-space: 1px; }
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.c__review {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.rew-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.review {
+  width: 25%;
+  height: 50vh;
+  display: flex;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%); }
+
+.review__background {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: black;
+  z-index: 1; }
+
+.review__info {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  z-index: 2; }
+
+.review__name {
+  font-family: gagalin;
+  font-size: 14px;
+  color: white;
+  margin-top: 45px;
+  margin-left: 20px;
+  margin-bottom: 20px; }
+
+.review__text {
+  font-family: ubuntu;
+  font-weight: lighter;
+  font-size: 14px;
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 23px;
+  line-height: 24.5px;
+  width: 85%; }
+
+.review__detail {
+  font-family: ubuntu;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+  width: 110px;
+  padding: 13px 15px;
+  background-color: #2f3234;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-left: 20px; }
+
+.review__detail:hover {
+  background-color: #1f2122; }
+
+.review--1 {
+  background-image: url(../images/r1.jpg); }
+
+.review--2 {
+  background-image: url(../images/r2.jpg); }
+
+.review--3 {
+  background-image: url(../images/r3.jpg); }
+
+.review--4 {
+  background-image: url(../images/r4.jpg); }
+
+.review--5 {
+  background-image: url(../images/r5.jpg); }
+
+.review--6 {
+  background-image: url(../images/r6.jpg); }
+
+.review--7 {
+  background-image: url(../images/r7.jpg); }
+
+.review--8 {
+  background-image: url(../images/r8.jpg); }
+
+.review:hover > .review__info {
+    display: flex; }
+  
+.review:hover > .review__background {
+      display: block; }
+.review:hover{
+      filter: none
+    }
