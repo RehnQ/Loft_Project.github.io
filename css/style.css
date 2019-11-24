@@ -154,7 +154,7 @@ button {
   .main-menu__item:hover {
     text-decoration: underline; }
 
-.order-button {
+.btn {
   padding: 13px 16px;
   height: 35px;
   background-color: #e45028;
@@ -165,7 +165,7 @@ button {
   outline: none;
   border: 1px solid transparent;
   cursor: pointer; }
-  .order-button:hover {
+  .btn:hover {
     background-color: #c1401e; }
 
 .table-wrapper {
