@@ -108,8 +108,8 @@ button {
   color: white; }
 
 .container {
-  width: 1100px;
-  height: 100%;
+  max-width: 1100px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto; }
@@ -184,13 +184,6 @@ button {
   margin-top: -90px;
   margin-left: 0px; }
 
-.main-page__burger {
-  position: relative;
-  background-image: url(../images/drops.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 238px; }
-
 .main-page__burger_img {
   position: relative;
   left: 35px;
@@ -234,7 +227,7 @@ button {
   justify-content: center;
   align-items: center; }
 
-.c__best {
+.best__container {
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -284,110 +277,76 @@ button {
   white-space: 1px; }
 
 .reviews {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap; }
-
-.c__review {
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto; }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }   
+    
 
 .rew-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }    
 
 .review {
-  width: 25%;
-  height: 50vh;
-  display: flex;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  filter: grayscale(100%); }
+    width: 25%;
+    height: 50vh;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%); }   
 
-.review__background {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  background-color: black;
-  z-index: 1; }
 
+  
 .review__info {
-  position: relative;
-  display: none;
-  flex-direction: column;
-  z-index: 2; }
+    position: relative;
+    display: none;
+    flex-direction: column;
+    z-index: 2; }     
 
 .review__name {
-  font-family: gagalin;
-  font-size: 14px;
-  color: white;
-  margin-top: 45px;
-  margin-left: 20px;
-  margin-bottom: 20px; }
+    font-family: gagalin;
+    font-size: 14px;
+    color: white;
+    margin-top: 45px;
+    margin-left: 20px;
+    margin-bottom: 20px; }   
 
 .review__text {
-  font-family: ubuntu;
-  font-weight: lighter;
-  font-size: 14px;
-  color: white;
-  margin-left: 20px;
-  margin-bottom: 23px;
-  line-height: 24.5px;
-  width: 85%; }
+    font-family: ubuntu;
+    font-weight: lighter;
+    font-size: 14px;
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 23px;
+    line-height: 25px;
+    width: 85%; }    
 
-.review__detail {
-  font-family: ubuntu;
-  font-size: 13px;
-  text-transform: uppercase;
-  color: white;
-  width: 110px;
-  padding: 13px 15px;
-  background-color: #2f3234;
-  border-radius: 5px;
-  margin-left: 20px;
-  margin-left: 20px; }
+.review__more {
+    font-family: ubuntu;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    width: 110px;
+    padding: 13px 15px;
+    background-color: #2f3234;
+    border-radius: 5px;
+    margin-left: 20px;}    
+ 
 
-.review__detail:hover {
-  background-color: #1f2122; }
-
-.review--1 {
-  background-image: url(../images/r1.jpg); }
-
-.review--2 {
-  background-image: url(../images/r2.jpg); }
-
-.review--3 {
-  background-image: url(../images/r3.jpg); }
-
-.review--4 {
-  background-image: url(../images/r4.jpg); }
-
-.review--5 {
-  background-image: url(../images/r5.jpg); }
-
-.review--6 {
-  background-image: url(../images/r6.jpg); }
-
-.review--7 {
-  background-image: url(../images/r7.jpg); }
-
-.review--8 {
-  background-image: url(../images/r8.jpg); }
+.review__more:hover {
+    background-color: #1f2122; }    
 
 .review:hover > .review__info {
-    display: flex; }
-  
+    display: flex; }   
+
 .review:hover > .review__background {
-      display: block; }
+    display: block; }
+
 .review:hover{
       filter: none
-    }
+    } 
