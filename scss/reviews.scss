@@ -1,0 +1,101 @@
+
+.reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+.rew-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.review {
+    width: 25%;
+    height: 50vh;
+    display: flex;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    @include tablets{
+        width: 50%;
+        height: 25vh;
+    }
+}
+
+
+
+.review__info {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    z-index: 2;
+    @include tablets{
+        text-align: center;
+    }
+}
+
+.review__name {
+    font-family: gagalin;
+    font-size: rem(14px);
+    color: white;
+    margin-top: rem(45px);
+    margin-left: rem(20px);
+    margin-bottom: rem(20px);
+
+    @include phones {
+        font-size: rem(28px);
+    }
+}
+
+.review__text {
+    font-family: ubuntu;
+    font-weight: lighter;
+    font-size: rem(14px);
+    color: white;
+    margin-left: rem(20px);
+    margin-bottom: rem(23px);
+    line-height: rem(25px);
+    width: 85%;
+
+    @include phones {
+        display: none;
+    }
+}
+
+.review__more {
+    font-family: ubuntu;
+    font-size: rem(13px);
+    text-transform: uppercase;
+    color: white;
+    width: rem(110px);
+    padding: rem(13px) rem(15px);
+    background-color: #2f3234;
+    border-radius: rem(5px);
+    margin-left: rem(20px);
+    margin-left: rem(20px);
+}
+
+
+.review__more:hover {
+    background-color: #1f2122;
+}
+
+.review:hover>.review__info {
+    display: flex;
+}
+
+.review:hover>.review__background {
+    display: block;
+}
+
+.review:hover {
+    filter: none
+}

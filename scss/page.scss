@@ -1,0 +1,80 @@
+
+
+body {
+    margin: 0;
+}
+
+
+*,
+button {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Ubuntu;
+}
+
+.pager {
+    position: fixed;
+    right: 33px;
+    top: 75px;
+}
+
+.pager__items {
+    list-style: none;
+    position: relative;
+}
+
+.pager__item {
+    position: relative;
+}
+
+.pager__url {
+    color: white;
+}
+
+.pager__item {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.pager__active:after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

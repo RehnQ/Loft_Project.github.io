@@ -1,0 +1,103 @@
+.map {
+	position: relative;
+}
+.burger-map {
+	background: url(../images/map.jpg) center no-repeat;
+	background-size: cover;
+	height: 100%;
+	//margin-bottom: rem(-58px);
+}
+.footer {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	transform: translate(0,rem(-58px));
+	width: 100%;
+	height: rem(58px);
+	background: url(../images/bg_footer.jpg) center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	@include phones {
+		flex-direction: column;
+		height: rem(100px);
+		transform: translate(0,rem(-100px));
+		padding-top: rem(10px);
+	}
+}
+
+.adress, .phone {
+	font-family: ubuntu;
+	font-weight: normal;
+	color: white;
+	font-size: rem(14px);
+
+}
+
+.contacts {
+	margin-left: rem(80px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	@include phones {
+		margin-left: 0;
+		text-align: center;
+	}
+}
+
+.phone__img>svg {
+	float: left;
+}
+.phone__info {
+	@include phones {
+		margin-top: rem(10px);
+		display: inline-table;
+		align-self: center
+	}
+}
+.phone {
+	display: block;
+	font-weight: bold;
+	color: #da4d27;
+	margin-left: rem(20px);
+
+	@include phones {
+		margin-left: rem(10px);
+		display: inline-block;
+	}
+}
+
+
+.social {
+	margin-right: rem(80px);
+
+	@include phones {
+		margin: 0 auto;
+		text-align: center;
+
+	}
+}
+
+.social__items {
+	list-style: none;
+
+	@include phones {
+		margin-left: -50px;
+	}
+}
+
+.social__item {
+	float: left;
+	margin-left: rem(20px);
+	fill: #626262;
+	transition: fill .4s ease;
+}
+
+.social__item:hover use {
+	fill: #FFF;
+	transition: fill .4s ease;
+	;
+}
