@@ -2,200 +2,486 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Burger</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Burger</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <section class="main-page" id="main-page">
-            <div class="container">
-                <header class="header">
-                    <section class="logo">
-                        <a href=""><img src="images/logo.png" alt="Логотип"></a>
-                    </section>
-                    <div class="menu">
-                        <nav class="main-menu">
-                            <ul class="main-menu__items">
-                                <li class="main-menu__item"><a href="#best" class="main-menu__url">О нас</a></li>
-                                <li class="main-menu__item"><a href="#slider" class="main-menu__url">Бургеры </a></li>
-                                <li class="main-menu__item"><a href="#team" class="main-menu__url">Команда </a></li>
-                                <li class="main-menu__item"><a href="#menu" class="main-menu__url">Меню</a></li>
-                                <li class="main-menu__item"><a href="#review" class="main-menu__url">Отзывы</a></li>
-                                <li class="main-menu__item"><a href="#map" class="main-menu__url">Контакты</a></li>
-                            </ul>
-                        </nav>
-                        <button class="btn"><a href="#order" class="main-menu__url">Заказать</a>
-                        </button>
-                    </div>
-                </header>
-                <div class="table-wrapper">
-                    <section class="main-page__table">
-                        <section class="main-page__burger">
-                            <img class="main-page__burger_img" src="images/burger_n.png" alt="Изображение бургера">
-                        </section>
-                        <section class="main-page__titles">
-                            <div class="main-page__main_title">мы делаем</div>
-                            <div class="main-page__second_title">натуральные бургеры</div>
-                        </section>
-                    </section>
+  <div class="wrapper">
+    <section class="main-page" id="main-page">
+      <div class="container">
+        <header class="header">
+          <div class="logo">
+            <a href=""><img src="images/logo.png" alt="Логотип"></a>
+          </div>
+          <div class="menu__header">
+            <nav class="main-menu">
+              <ul class="main-menu__items">
+                <li class="main-menu__item"><a href="#best" class="main-menu__url">О нас</a></li>
+                <li class="main-menu__item"><a href="#slider" class="main-menu__url">Бургеры </a></li>
+                <li class="main-menu__item"><a href="#team" class="main-menu__url">Команда </a></li>
+                <li class="main-menu__item"><a href="#menu" class="main-menu__url">Меню</a></li>
+                <li class="main-menu__item"><a href="#review" class="main-menu__url">Отзывы</a></li>
+                <li class="main-menu__item"><a href="#map" class="main-menu__url">Как мы работаем</a></li>
+                <li class="main-menu__item"><a href="#map" class="main-menu__url">Контакты</a></li>
+              </ul>
+            </nav>
+            <button class="btn"><a href="#order" class="main-menu__url">Заказать</a>
+            </button>
+          </div>
+        </header>
+        <div class="table-wrapper">
+          <div class="main-page__table">
+            <div class="main-page__burger">
+              <img class="main-page__burger_img" src="images/burger_n.png" alt="Изображение бургера">
+            </div>
+            <div class="main-page__titles">
+              <div class="main-page__main_title">мы делаем</div>
+              <div class="main-page__second_title">натуральные бургеры</div>
+            </div>
+          </div>
+        </div>
+        <a href="#review" class="main-page__down">
+          <img src="images/arrow-scroll.png" alt="кнопка скролла">
+        </a>
+      </div>
+    </section>
+    <section class="best" id="best">
+      <div class="container best__container">
+        <div class="best-title">Мы лучшие</div>
+        <ul class="prefs">
+          <li class="pref">
+            <div class="pref__img">
+              <img src="images/meat.png" alt="картинка секции">
+            </div>
+            <span class="pref__title">100% свежее мясо</span>
+            <p class="pref__text">
+              Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+            </p>
+          </li>
+          <li class="pref">
+            <div class="pref__img">
+              <img src="images/hand.png" alt="картинка секции">
+            </div>
+            <span class="pref__title">Ручная сборка</span>
+            <p class="pref__text">
+              Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
+              притягивает сюжетный реформаторский пафос.
+            </p>
+          </li>
+          <li class="pref">
+            <div class="pref__img">
+              <img src="images/natural.png" alt="картинка секции">
+            </div>
+            <span class="pref__title">Натуральные ингредиенты</span>
+            <p class="pref__text">
+              Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="team section" id = "team">
+      <div class="team__section">
+        <div class="team__content-wrapper">
+          <div class="team__content">
+            <h2 class="team__title">
+              Команда
+            </h2>
+            <ul class="team-acco">
+              <li class="team-acco__item">
+                <div class="team-acco__title">
+                  Дэниэл Редклиф
                 </div>
-                <a href="#review" class="main-page__down">
-                    <img src="images/arrow-scroll.png" alt="кнопка скролла">
-                </a>
-            </div>
-        </section>
-        <section class="best" id="best">
-            <div class="container best__container">
-                <div class="best-title">Мы лучшие</div>
-                <ul class="prefs">
-                    <li class="pref">
-                        <div class="pref__img">
-                            <img src="images/meat.png" alt="картинка секции">
-                        </div>
-                        <span class="pref__title">100% свежее мясо</span>
-                        <p class="pref__text">
-                            Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
-                        </p>
-                    </li>
-                    <li class="pref">
-                        <div class="pref__img">
-                            <img src="images/hand.png" alt="картинка секции">
-                        </div>
-                        <span class="pref__title">Ручная  сборка</span>
-                        <p class="pref__text">
-                            Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.
-                        </p>
-                    </li>
-                    <li class="pref">
-                        <div class="pref__img">
-                            <img src="images/natural.png" alt="картинка секции">
-                        </div>
-                        <span class="pref__title">Натуральные ингредиенты</span>
-                        <p class="pref__text">
-                            Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        
-        </section>
-        <section class="section reviews" id="review">
-                <section class="rew-wrapper">
-                    <section class="review" style="background-image: url(images/r1.jpg);">
-                        <div class="review__info">
-                            <span class="review__name">Константин Спилберг</span>
-                            <span class="review__text">
-                            Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                        </span>
-                            <a href="#" class="review__more">Подробнее</a>
-                        </div>
-                    </section>
-                    <section class="review" style="background-image: url(images/r2.jpg);">
-                        <div class="review__info">
-                            <span class="review__name">Константин Спилберг</span>
-                            <span class="review__text">
-                            Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                        </span>
-                            <a href="#" class="review__more">Подробнее</a>
-                        </div>
-                    </section>
-                    <section class="review" style="background-image: url(images/r3.jpg);">
-                        <div class="review__info">
-                            <span class="review__name">Константин Спилберг</span>
-                            <span class="review__text">
-                            Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                        </span>
-                            <a href="#" class="review__more">Подробнее</a>
-                        </div>
-                    </section>
-                    <section class="review" style="background-image: url(images/r4.jpg);">
-                        <div class="review__info">
-                            <span class="review__name">Константин Спилберг</span>
-                            <span class="review__text">
-                            Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                        </span>
-                            <a href="#" class="review__more">Подробнее</a>
-                        </div>
-                    </section>
-                    <section class="review" style="background-image: url(images/r5.jpg);">
-                        <div class="review__info">
-                            <span class="review__name">Константин Спилберг</span>
-                            <span class="review__text">
-                            Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                        </span>
-                            <a href="#" class="review__more">Подробнее</a>
-                        </div>
-                    </section>
-                    <section class="review" style="background-image: url(images/r6.jpg);">
-                        <div class="review__info">
-                            <span class="review__name">Константин Спилберг</span>
-                            <span class="review__text">
-                            Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                        </span>
-                            <a href="#" class="review__more">Подробнее</a>
-                        </div>
-                    </section>
-                    <section class="review" style="background-image: url(images/r7.jpg);">
-                        <div class="review__info">
-                            <span class="review__name">Константин Спилберг</span>
-                            <span class="review__text">
-                            Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                        </span>
-
-                            <a href="#" class="review__more">Подробнее</a>
-                        </div>
-                    </section>
-                    <section class="review" style="background-image: url(images/r8.jpg);">
-                        <div class="review__info">
-                            <span class="review__name">Константин Спилберг</span>
-                            <span class="review__text">
-                            Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
-                        </span>
-                            <a href="#" class="review__more">Подробнее</a>
-                        </div>
-                    </section>
-                </section>
-            </section>
-
-            <section class="footer">
-                <!-- пока не верстать -->
-            </section>
-        <section class="pager">
-            <ul class="pager__items ">
-                <a href="#main-page" class="pager__url">
-                    <li class="pager__item pager__active">
-                    </li>
-                </a>
-                <a href="#best" class="pager__url">
-                    <li class="pager__item">
-                    </li>
-                </a>
-                <a href="#slider" class="pager__url">
-                    <li class="pager__item">
-                    </li>
-                </a>
-                <a href="#team" class="pager__url">
-                    <li class="pager__item">
-                    </li>
-                </a>
-                <a href="#menu" class="pager__url">
-                    <li class="pager__item">
-                    </li>
-                </a>
-                <a href="#review" class="pager__url">
-                    <li class="pager__item">
-                    </li>
-                </a>
-                <a href="#map" class="pager__url">
-                    <li class="pager__item">
-                    </li>
-                </a>
+                <div class="team-acco__content">
+                  <div class="team-acco__image">
+                    <div class="team-acco__avatar">
+                      <img src="img/content/operator.jpg" alt="Оператор" class="team-acco__pic">
+                    </div>
+                  </div>
+                  <div class="team-acco__desc">
+                    <div class="team-acco__desc-title">
+                      Оператор
+                    </div>
+                    <div class="team-acco__desc-text">
+                      <p>
+                        С радостью поможет подобрать идеальный бургер и оформить заказ.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team-acco__item team-acco__item--active">
+                <div class="team-acco__title">
+                  Ричард Джеймс
+                </div>
+                <div class="team-acco__content">
+                  <div class="team-acco__image">
+                    <div class="team-acco__avatar">
+                      <img src="img/content/operator.jpg" alt="Оператор" class="team-acco__pic">
+                    </div>
+                  </div>
+                  <div class="team-acco__desc">
+                    <div class="team-acco__desc-title">
+                      Оператор
+                    </div>
+                    <div class="team-acco__desc-text">
+                      <p>
+                        С радостью поможет подобрать идеальный бургер и оформить заказ.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team-acco__item">
+                <div class="team-acco__title">
+                  Джейк Финн
+                </div>
+                <div class="team-acco__content">
+                  <div class="team-acco__image">
+                    <div class="team-acco__avatar">
+                      <img src="img/content/operator.jpg" alt="Оператор" class="team-acco__pic">
+                    </div>
+                  </div>
+                  <div class="team-acco__desc">
+                    <div class="team-acco__desc-title">
+                      Оператор
+                    </div>
+                    <div class="team-acco__desc-text">
+                      <p>
+                        С радостью поможет подобрать идеальный бургер и оформить заказ.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team-acco__item">
+                <div class="team-acco__title">
+                  Николай Иванов
+                </div>
+                <div class="team-acco__content">
+                  <div class="team-acco__image">
+                    <div class="team-acco__avatar">
+                      <img src="img/content/operator.jpg" alt="Оператор" class="team-acco__pic">
+                    </div>
+                  </div>
+                  <div class="team-acco__desc">
+                    <div class="team-acco__desc-title">
+                      Оператор
+                    </div>
+                    <div class="team-acco__desc-text">
+                      <p>
+                        С радостью поможет подобрать идеальный бургер и оформить заказ.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section menu" id="menu">
+      <div class="wrapper-menu">
+          <span class="menu__main-title">меню</span>
+          <div class="menu__items">
+              <div class="menu__item">
+                  <div class="menu__title">Для мясоедов</div>
+                  <div class="menu__description">
+                      <p>
+                          Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
+                          Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений 
+                          неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует 
+                          диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает 
+                          диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                          </p>
+                          <a href="#" class="menu-acco__close"></a>
+                  </div>
+              </div>
+              <div class="menu__item">
+                  <div class="menu__title">Вегетарианское</div>
+                  <div class="menu__description">
+                  <p>
+                      Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
+                      Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений 
+                      неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует 
+                      диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает 
+                      диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                      </p>
+                      <a href="#" class="menu-acco__close"></a>
+                  </div>
+              </div>
+              <div class="menu__item">
+                  <div class="menu__title"><span class="menu__title_text"></span>Диетическое</span></div>
+                  <div class="menu__description">
+                    <p>
+                    Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
+                    Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений 
+                    неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует 
+                    диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает 
+                    диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                    </p>
+                    <a href="#" class="menu-acco__close"></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <section class="section reviews" id="review">
+      <div class="rew-wrapper">
+        <div class="review" style="background-image: url(images/r1.jpg);">
+          <div class="review__info">
+            <span class="review__name">Константин Спилберг</span>
+            <span class="review__text">
+              Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+              могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </span>
+            <a href="#" class="review__more">Подробнее</a>
+          </div>
+        </div>
+        <div class="review" style="background-image: url(images/r2.jpg);">
+          <div class="review__info">
+            <span class="review__name">Константин Спилберг</span>
+            <span class="review__text">
+              Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+              могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </span>
+            <a href="#" class="review__more">Подробнее</a>
+          </div>
+        </div>
+        <div class="review" style="background-image: url(images/r3.jpg);">
+          <div class="review__info">
+            <span class="review__name">Константин Спилберг</span>
+            <span class="review__text">
+              Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+              могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </span>
+            <a href="#" class="review__more">Подробнее</a>
+          </div>
+        </div>
+        <div class="review" style="background-image: url(images/r4.jpg);">
+          <div class="review__info">
+            <span class="review__name">Константин Спилберг</span>
+            <span class="review__text">
+              Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+              могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </span>
+            <a href="#" class="review__more">Подробнее</a>
+          </div>
+        </div>
+        <div class="review" style="background-image: url(images/r5.jpg);">
+          <div class="review__info">
+            <span class="review__name">Константин Спилберг</span>
+            <span class="review__text">
+              Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+              могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </span>
+            <a href="#" class="review__more">Подробнее</a>
+          </div>
+        </div>
+        <div class="review" style="background-image: url(images/r6.jpg);">
+          <div class="review__info">
+            <span class="review__name">Константин Спилберг</span>
+            <span class="review__text">
+              Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+              могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </span>
+            <a href="#" class="review__more">Подробнее</a>
+          </div>
+        </div>
+        <div class="review" style="background-image: url(images/r7.jpg);">
+          <div class="review__info">
+            <span class="review__name">Константин Спилберг</span>
+            <span class="review__text">
+              Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+              могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </span>
+
+            <a href="#" class="review__more">Подробнее</a>
+          </div>
+        </div>
+        <div class="review" style="background-image: url(images/r8.jpg);">
+          <div class="review__info">
+            <span class="review__name">Константин Спилберг</span>
+            <span class="review__text">
+              Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+              могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+            </span>
+            <a href="#" class="review__more">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order section" id="order">
+      <div class="section__wrapper order__wrapper">
+        <div class="order__title">
+          Закажите доставку
+        </div>
+        <div class="form">
+          <form action="#">
+            <div class="form__columns">
+              <div class="form__column form__column--left">
+                <div class="form__row">
+                  <div class="form__input-wrapper">
+                    <label class="form__input-lable" for="name">Имя</label>
+                    <input class="form__input" type="text" id="name">
+                  </div>
+                  <div class="form__input-wrapper">
+                    <label class="form__input-lable" for="phone">Телефон</label>
+                    <input class="form__input" type="text" id="phone">
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__input-wrapper">
+                    <label class="form__input-lable" for="street">Улица</label>
+                    <input class="form__input" type="text" id="street">
+                  </div>
+
+                </div>
+                <div class="form__row">
+                  <div class="form__input-wrapper">
+                    <label class="form__input-lable" for="house">Дом</label>
+                    <input class="form__input" type="text" id="house">
+                  </div>
+
+                  <div class="form__input-wrapper">
+                    <label class="form__input-lable" for="building">Корпус</label>
+                    <input class="form__input" type="text" id="building">
+                  </div>
+
+                  <div class="form__input-wrapper">
+                    <label class="form__input-lable" for="flat">Квартира</label>
+                    <input class="form__input" type="text" id="flat">
+                  </div>
+
+                  <div class="form__input-wrapper">
+                    <label class="form__input-lable" for="floor">Этаж</label>
+                    <input class="form__input" type="text" id="floor">
+                  </div>
+
+                </div>
+              </div>
+              <div class="form__column form__column--right">
+                <div class="form__texarea-wrapper">
+                  <label class="form__input-lable" for="comments">Комментарии</label>
+                  <textarea class="form__textarea" id="comments"></textarea>
+                </div>
+                <div class="form__bottom">
+                  <div class="form__radios">
+                    <label class="form__radio-label form__label">
+                      <input class="form__radio" type="radio" name="pay" value="short-change">Потребуется сдача
+                      <span class="form__radio-indicator"></span>
+                    </label>
+                    <label class="form__radio-label form__label">
+                      <input class="form__radio" type="radio" name="pay" value="card" checked>Оплата по карте
+                      <span class="form__radio-indicator"></span>
+                    </label>
+                  </div>
+                  <label class="form__checkbox-label form__label">
+                    <input class="form__checkbox" type="checkbox" name="callback" value="yes" checked>Не перезванивать
+                    <span class="form__checkbox-indicator">
+                    </span>
+                  </label>
+                  <div class="form__buttons">
+                    <button class="form__submit" type="submit">Заказать</button>
+                    <button type="reset" class="form__clear" href="#">Очистить</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section map" id="map">
+      <div class="burger__map">
+      </div>
+      <footer class="footer">
+        <div class="contacts">
+          <span class="adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</span>
+          <div class="phone__info">
+            <div class="phone__img">
+              <svg class="phone-icon" width="12px" height="12px">
+                <use x="0" y="0" width="12px" height="12px" fill="#e35028" xlink:href="images/sprite.svg#phone" />
+              </svg>
+              <a href="#" class="phone">+7 (812) 377-13-77</a>
+            </div>
+          </div>
+        </div>
+        <div class="social">
+          <ul class="social__items">
+            <li class="social__item">
+              <a href="#">
+                <svg width="20px" height="20px">
+                  <use x="0" y="0" width="20px" height="20px" viewBox="0 2 1920 76" fill="#595959"
+                    xlink:href="images/sprite.svg#vk" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <svg width="20px" height="20px">
+                  <use x="0" y="0" width="20px" height="20px" fill="#595959" xlink:href="images/sprite.svg#fb" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <svg width="20px" height="20px">
+                  <use x="0" y="0" width="20px" height="20px" fill="#595959" viewBox="0 0 20 20"
+                    xlink:href="images/sprite.svg#inst" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <svg width="20px" height="20px">
+                  <use x="0" y="0" width="20px" height="20px" fill="#595959" xlink:href="images/sprite.svg#twitter" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </section>
+    <div class="pager">
+      <ul class="pager__items ">
+        <a href="#main-page" class="pager__url">
+          <li class="pager__item pager__active">
+          </li>
+        </a>
+        <a href="#best" class="pager__url">
+          <li class="pager__item">
+          </li>
+        </a>
+        <a href="#slider" class="pager__url">
+          <li class="pager__item">
+          </li>
+        </a>
+        <a href="#team" class="pager__url">
+          <li class="pager__item">
+          </li>
+        </a>
+        <a href="#menu" class="pager__url">
+          <li class="pager__item">
+          </li>
+        </a>
+        <a href="#review" class="pager__url">
+          <li class="pager__item">
+          </li>
+        </a>
+        <a href="#map" class="pager__url">
+          <li class="pager__item">
+          </li>
+        </a>
+      </ul>
     </div>
+  </div>
 </body>
 
 </html>
