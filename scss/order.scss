@@ -73,6 +73,7 @@
     background: #ffffff;
     border-radius: rem(7px);
     border: 0;
+    outline: none
   }
 
 .form__input-wrapper {
@@ -96,6 +97,7 @@
     padding: rem(9px);
     margin-bottom: rem(9px);
     resize: none;
+    border-radius: 0.4375rem;
   }
 
 .form__textarea-wrapper {
@@ -204,7 +206,7 @@
     transform: rotate(35deg);
 }
 
-.form__submit {
+.btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
