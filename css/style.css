@@ -59,6 +59,17 @@
       -ms-flex-direction: column;
       flex-direction: column; } }
 
+.promo__icon {
+  height: 100%;
+  width: 100%; }
+  .promo__icon--meat {
+    fill: red; }
+  .promo__icon--hand {
+    fill: orange; }
+  .promo__icon--natural {
+    height: 4.6875rem;
+    fill: green; }
+
 .pref {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,6 +485,17 @@
   -ms-flex-align: center;
   align-items: center;
   margin-top: -2.5625rem; }
+
+.arrow__scroll {
+  width: 1.8125rem;
+  height: 0.9375rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  fill: white;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer; }
 
 .map {
   position: relative; }
