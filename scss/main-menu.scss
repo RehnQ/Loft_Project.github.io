@@ -36,11 +36,6 @@
 }
 
 
-
-
-
-
-
 .header {
     display: flex;
     align-items: center;
@@ -194,4 +189,15 @@
     justify-content: center;
     align-items: center;
     margin-top: rem(-41px);
+}
+
+
+.arrow__scroll {
+    width: rem(29px);
+    height: rem(15px);
+    margin-left: rem(20px);
+    margin-right: rem(20px);
+    fill: white;
+    transform: translateY(-50%);
+    cursor: pointer;
 }

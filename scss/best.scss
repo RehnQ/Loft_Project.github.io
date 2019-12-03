@@ -41,6 +41,28 @@
     
 }
 
+
+.promo__icon {
+    height: 100%;
+    width: 100%;
+  
+    &--meat {
+      fill: red;
+    }
+  
+    &--hand {
+      fill:orange;
+    }
+  
+    &--natural {
+      height: rem(75px);
+      fill: green;
+    }
+  }
+  
+
+
+
 .pref {
     display: flex;
     flex-direction: column;
