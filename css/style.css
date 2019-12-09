@@ -1395,7 +1395,7 @@ button {
       bottom: initial;
       right: 0; } }
 
-.slider__structure-wrapper:hover .structure__table {
+.slider__structure-cont:hover .structure__table {
   top: 0; }
 
 .slider__structure {
@@ -1432,6 +1432,9 @@ button {
   height: 2.75rem;
   margin-bottom: 0.5rem;
   fill: #ffffff; }
+
+.structure:hover {
+  background-color: red; }
 
 .structure__table {
   position: absolute;
