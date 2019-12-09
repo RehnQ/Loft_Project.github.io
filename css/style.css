@@ -914,7 +914,7 @@ button {
 
 .section {
   width: 100%;
-  height: 100vh; }
+  min-height: 100vh; }
 
 .reviews {
   display: -webkit-box;
@@ -1275,7 +1275,10 @@ button {
   background-image: -webkit-linear-gradient(top, #f9b43b 24%, #eb8c38 48%, #f9b43b 74%);
   background-image: -o-linear-gradient(top, #f9b43b 24%, #eb8c38 48%, #f9b43b 74%);
   background-image: linear-gradient(to bottom, #f9b43b 24%, #eb8c38 48%, #f9b43b 74%);
-  color: #ffffff; }
+  color: #ffffff; 
+  display: flex;
+  align-items: center;
+}
 
 .slider__wrapper {
   display: -webkit-box;
@@ -1689,4 +1692,5 @@ ul {
   margin-right: auto;
   width: 95%;
   max-width: 940px;
-  height: 100%; }
+  height: 100%;
+ }
