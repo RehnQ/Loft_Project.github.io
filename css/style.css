@@ -575,7 +575,7 @@
   text-align: center; }
 
 .menu__description {
-  width: 0;
+  width: 0rem;
   height: 100%;
   line-height: 1.71;
   overflow: hidden; }
@@ -673,7 +673,11 @@
   background: #ffffff;
   border-radius: 0.4375rem;
   border: 0;
-  outline: none; }
+  outline: none;
+  margin-bottom: 1.4375rem; }
+
+.form__input:focus {
+  border: 1px solid orange; }
 
 .form__input-wrapper {
   -webkit-box-flex: 1;
@@ -695,7 +699,11 @@
   padding: 0.5625rem;
   margin-bottom: 0.5625rem;
   resize: none;
-  border-radius: 0.4375rem; }
+  border-radius: 0.4375rem;
+  outline: none; }
+
+.form__textarea:focus {
+  border: 1px solid orange; }
 
 .form__textarea-wrapper {
   -webkit-box-flex: 1;
@@ -902,8 +910,8 @@ button {
   position: absolute;
   top: -7px;
   left: -7px;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border: 1px solid white;
   border-radius: 50%;
   background-color: transparent; }
@@ -914,7 +922,7 @@ button {
 
 .section {
   width: 100%;
-  min-height: 100vh; }
+  height: 100vh; }
 
 .reviews {
   display: -webkit-box;
@@ -1275,10 +1283,7 @@ button {
   background-image: -webkit-linear-gradient(top, #f9b43b 24%, #eb8c38 48%, #f9b43b 74%);
   background-image: -o-linear-gradient(top, #f9b43b 24%, #eb8c38 48%, #f9b43b 74%);
   background-image: linear-gradient(to bottom, #f9b43b 24%, #eb8c38 48%, #f9b43b 74%);
-  color: #ffffff; 
-  display: flex;
-  align-items: center;
-}
+  color: #ffffff; }
 
 .slider__wrapper {
   display: -webkit-box;
@@ -1625,13 +1630,13 @@ button {
   transform: translateY(-50%);
   cursor: pointer; }
   .slider__arrow--left {
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg); }
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
   .slider__arrow--right {
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
   @media screen and (max-width: 480px) {
     .slider__arrow {
       margin-left: 8px;
@@ -1692,5 +1697,4 @@ ul {
   margin-right: auto;
   width: 95%;
   max-width: 940px;
-  height: 100%;
- }
+  height: 100%; }
