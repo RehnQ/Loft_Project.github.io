@@ -257,6 +257,13 @@
   .footer__right-social:hover {
     fill-opacity: 1; }
 
+.section__footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  max-width: 940px;
+  height: 100%; }
+
 .main-menu__url {
   color: white; }
 
@@ -488,12 +495,20 @@
   cursor: pointer; }
 
 .map {
-  position: relative; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .burger__map {
-  background: url(../images/map.jpg) center no-repeat;
-  background-size: cover;
-  height: 100%; }
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: url("../img/bg/map.jpg") center top no-repeat;
+  background-size: cover; }
 
 .wrapper-menu {
   width: 100%;
@@ -565,13 +580,11 @@
   text-align: center; }
 
 .menu__description {
-  width: 0rem;
+  width: 5rem;
   height: 100%;
   line-height: 1.71;
-  overflow: hidden; }
-  .menu__description p {
-    margin: 0;
-    padding: 3.75rem 2.1875rem; }
+  overflow: hidden;
+  display: none; }
 
 .order {
   background: #000000 url("../img/bg/order-bg.jpg") center no-repeat;
@@ -662,9 +675,11 @@
   font-size: 1rem;
   background: #ffffff;
   border-radius: 0.4375rem;
-  border: 0;
+  border: 1px solid transparent;
   outline: none;
-  margin-bottom: 1.4375rem; }
+  margin-bottom: 1.4375rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .form__input:focus {
   border: 1px solid orange; }
@@ -912,7 +927,7 @@ button {
 
 .section {
   width: 100%;
-  height: 100vh; }
+  min-height: 100vh; }
 
 .reviews {
   display: -webkit-box;
@@ -1273,7 +1288,13 @@ button {
   background-image: -webkit-linear-gradient(top, #f9b43b 24%, #eb8c38 48%, #f9b43b 74%);
   background-image: -o-linear-gradient(top, #f9b43b 24%, #eb8c38 48%, #f9b43b 74%);
   background-image: linear-gradient(to bottom, #f9b43b 24%, #eb8c38 48%, #f9b43b 74%);
-  color: #ffffff; }
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .slider__wrapper {
   display: -webkit-box;
@@ -1542,11 +1563,17 @@ button {
   @media screen and (max-width: 768px) {
     .slider__kalories {
       margin-left: auto; } }
+  @media screen and (max-width: 480px) {
+    .slider__kalories {
+      display: none; } }
 
 .slider__kalories-icon {
   width: 100%;
   height: 3.75rem;
   fill: #ffffff; }
+  @media screen and (max-width: 480px) {
+    .slider__kalories-icon {
+      display: none; } }
 
 .slider__kalories-number {
   position: absolute;
@@ -1687,4 +1714,4 @@ ul {
   margin-right: auto;
   width: 95%;
   max-width: 940px;
-  height: 100%; }
+  min-height: 100vh; }
